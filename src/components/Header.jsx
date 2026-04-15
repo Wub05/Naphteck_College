@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LOGO from "../assets/images/logo.jpg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,16 +12,16 @@ export default function Header() {
     <>
       <header
         id="global-header"
-        className="code-section fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100"
+        className="code-section fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 font-heading"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-24 lg:h-20">
             {/* Logo */}
             <a href="/" data-logo="" className="flex items-center">
               <img
-                src="https://assets.ls-assets.com/uploads/a4760528-5203-4a76-b611-9f57eecf3b2c/b93b2705-0afe-452f-a2d6-445c4fb14642.webp?w=200"
+                src={LOGO}
                 alt="Naphtech College Logo"
-                className="h-10 lg:h-12 w-auto"
+                className="h-16 lg:h-[70px] w-auto"
               />
             </a>
             {/* tiktok icons */}
@@ -48,18 +49,24 @@ export default function Header() {
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8 font-bold">
               <a
-                href="#services"
-                className="text-gray-600 hover:text-[#1E3A8A] font-medium transition-colors"
+                href="#healthcare"
+                className="text-gray-600 hover:text-[#1E3A8A] font-medium transition-colors "
               >
-                Services
+                Degrees
               </a>
               <a
                 href="#training"
                 className="text-gray-600 hover:text-[#1E3A8A] font-medium transition-colors"
               >
                 Trainings
+              </a>
+              <a
+                href="#services"
+                className="text-gray-600 hover:text-[#1E3A8A] font-medium transition-colors"
+              >
+                Services
               </a>
 
               <a
@@ -135,11 +142,11 @@ export default function Header() {
         >
           <nav className="px-4 py-4 space-y-1">
             <a
-              href="#services"
+              href="#healthcare"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-4 py-3 text-gray-700 hover:text-[#1E3A8A] hover:bg-gray-50 rounded-lg font-medium"
             >
-              Services
+              Degrees
             </a>
             <a
               href="#training"
@@ -147,6 +154,13 @@ export default function Header() {
               className="block px-4 py-3 text-gray-700 hover:text-[#1E3A8A] hover:bg-gray-50 rounded-lg font-medium"
             >
               Trainings
+            </a>
+            <a
+              href="#services"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-4 py-3 text-gray-700 hover:text-[#1E3A8A] hover:bg-gray-50 rounded-lg font-medium"
+            >
+              Services
             </a>
 
             <a

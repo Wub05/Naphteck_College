@@ -29,29 +29,8 @@ export default function StartNow() {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-                {/* <a
-                  href="/admissions"
-                  className="group relative bg-white hover:bg-[#F0F4FF] text-[#1E3A8A] px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-white/25 hover:-translate-y-1 pulse-slow"
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    Enroll Now
-                    <svg
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      ></path>
-                    </svg>
-                  </span>
-                </a> */}
                 <a
-                  href="/contact"
+                  href="#contact"
                   className="group bg-transparent hover:bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:border-white/50 hover:-translate-y-1"
                 >
                   <span className="flex items-center gap-2">

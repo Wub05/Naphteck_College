@@ -5,7 +5,7 @@ export default function WhyUs() {
     <>
       <section
         className="code-section bg-gradient-to-br from-[#0F172A] via-[#1E3A8A] to-[#0F172A] py-16 lg:py-24 relative overflow-hidden"
-        id="sk8kdib"
+        id="choose_us"
       >
         {/* <!-- Background Pattern --> */}
         <div className="absolute inset-0 opacity-10">

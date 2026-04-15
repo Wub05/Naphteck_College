@@ -65,7 +65,10 @@ export default function FAQ() {
           </div>
 
           {/* FAQ Items */}
-          <div className="space-y-4 scroll-reveal translate-y-12 transition-all duration-700 ease-out">
+          <div
+            className="space-y-4 scroll-reveal translate-y-12 transition-all duration-700 ease-out "
+            id="faq"
+          >
             {faqData.map((faq, index) => (
               <div
                 key={index}
@@ -113,7 +116,7 @@ export default function FAQ() {
           <div className="text-center mt-20">
             <p className="text-[#6B7280] mb-4">Still have questions?</p>
             <a
-              href="/contact"
+              href="#contact"
               className="inline-flex items-center gap-2 text-[#1E3A8A] hover:text-[#3B82F6] font-semibold transition-colors"
             >
               Contact Us

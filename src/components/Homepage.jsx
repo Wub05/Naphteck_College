@@ -15,13 +15,6 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#0F172A]/90 to-[#1E3A8A]/50"></div>
         </div>
 
-        {/* <!-- Floating Code Elements --> */}
-        {/* <div className="absolute top-20 left-10 hidden lg:block animate-bounce[animation-duration: 3s] ">
-          <div className="bg-[#1E3A8A]/40 backdrop-blur-sm border border-[#3B82F6]/30 rounded-lg p-4 text-[#60A5FA] font-mono text-sm">
-            <div>const skills = await</div>
-            <div className="ml-4">learnTech();</div>
-          </div>
-        </div> */}
         <div className="absolute top-32 right-16 hidden lg:block bounce-slow">
           <div className="bg-[#06B6D4]/20 backdrop-blur-sm border border-[#06B6D4]/30 rounded-lg p-4 text-[#06B6D4] font-mono text-sm">
             <div>certification</div>
@@ -36,16 +29,20 @@ export default function HomePage() {
         </div>
 
         {/* <!-- Content --> */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#1E3A8A]/50 backdrop-blur-sm border border-[#3B82F6]/30 rounded-full px-4 py-2 mb-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center ">
+          <div className="inline-flex items-center gap-2 bg-[#1E3A8A]/50 backdrop-blur-sm border border-[#3B82F6]/30 rounded-full px-4 py-2 max-sm:mt-14 mb-8">
             <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse"></span>
             <span className="text-[#60A5FA] text-sm font-medium">
-              Now Enrolling for 2026 Programs
+              Now Enrolling for{" "}
+              <span className="text-white font-heading">
+                {new Date().getFullYear()}
+              </span>{" "}
+              Programs
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight font-heading">
-            Build Your Future in Tech with
+            Build Your Future in Tech & Healthcare with
             <span className="bg-gradient-to-r from-[#3B82F6] via-[#06B6D4] to-[#60A5FA] bg-clip-text text-transparent px-2 lg:px-4">
               Practical Skills
             </span>
@@ -58,9 +55,9 @@ export default function HomePage() {
             months.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <a
-              href="/admissions"
+              href="#contact"
               className="group relative bg-[#3B82F6] hover:bg-[#2563EB] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#3B82F6]/40 hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center gap-2">
@@ -76,27 +73,6 @@ export default function HomePage() {
                     stroke-linejoin="round"
                     stroke-width="2"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  ></path>
-                </svg>
-              </span>
-            </a>
-            <a
-              href="/programs"
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-            >
-              <span className="flex items-center gap-2">
-                Explore Programs
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
                   ></path>
                 </svg>
               </span>
@@ -147,7 +123,7 @@ export default function HomePage() {
         </div>
 
         {/* <!-- Bottom Wave --> */}
-        <div className="absolute bottom-0 left-0 right-0">
+        <div className="absolute bottom-0 left-0 right-0 ">
           <svg
             viewBox="0 0 1440 120"
             fill="none"

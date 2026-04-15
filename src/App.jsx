@@ -8,6 +8,9 @@ import WhyUs from "./components/WhyUs.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Language from "./components/Language.jsx";
 import ContactUs from "./components/ContactUs.jsx";
+import SuccessStories from "./components/SuccessStories.jsx";
+import Healthcare from "./components/Healthcare.jsx";
+
 const App = () => {
   return (
     <>
@@ -15,6 +18,8 @@ const App = () => {
       <HomePage />
       <COCTraining />
       <Services />
+      <Healthcare />
+      <SuccessStories />
       <WhyUs />
       <StartNow />
       <Language />

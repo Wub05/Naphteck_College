@@ -172,10 +172,10 @@ export default function Language() {
               </div>
 
               <a
-                href="/programs/english-language"
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-[#1E3A8A] hover:bg-[#1E40AF] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#1E3A8A]/25 hover:-translate-y-0.5"
               >
-                Explore Language Programs
+                To Explore Language Programs, Contact Us
                 <svg
                   className="w-5 h-5"
                   fill="none"

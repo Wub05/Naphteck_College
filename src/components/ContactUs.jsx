@@ -1,3 +1,5 @@
+import { Send } from "lucide-react";
+
 export default function ContactUs() {
   return (
     <>
@@ -31,7 +33,7 @@ export default function ContactUs() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1F2937] mb-4 leading-tight font-heading">
               Let's Start Your
               <span className="bg-gradient-to-r from-[#1E3A8A] to-[#3B82F6] bg-clip-text text-transparent pl-2 lg:pl-3">
-                Tech Journey
+                Learning Journey
               </span>
             </h2>
             <p className="text-lg text-[#6B7280] max-w-2xl mx-auto">
@@ -147,14 +149,11 @@ export default function ContactUs() {
                           <option value="english">
                             English Language Programs
                           </option>
+                          <option value="nursing">Nursing</option>
+                          <option value="pharmacy">Pharmacy</option>
                           <option value="other">Other</option>
                         </select>
-                        {/* <label
-                          htmlFor="program"
-                          className="absolute left-4 top-3 text-sm text-[#9CA3AF] transition-all duration-200 pointer-events-none"
-                        >
-                          Program of Interest
-                        </label> */}
+
                         <svg
                           className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#9CA3AF] pointer-events-none"
                           fill="none"
@@ -274,67 +273,10 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              {/* <!-- Bale Goba Campus --> */}
-              {/* <div className="group bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-[#3B82F6]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#3B82F6]/10 hover:-translate-y-1 overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 bg-[#3B82F6]/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="relative">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#3B82F6] to-[#8B5CF6] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <svg
-                        className="w-7 h-7 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        ></path>
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#1F2937] mb-0.5">
-                        Bale Goba Campus
-                      </h3>
-                      <p className="text-[#6B7280] text-sm">Branch Campus</p>
-                    </div>
-                  </div>
-                  <p className="text-[#6B7280] mb-3 pl-[4.5rem]">
-                    Bale Goba, Oromia Region
-                    <br />
-                    Ethiopia
-                  </p>
-                  <div className="flex items-center gap-2 text-[#6B7280] text-sm pl-[4.5rem]">
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      ></path>
-                    </svg>
-                    <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
-                  </div>
-                </div>
-              </div> */}
-
               {/* <!-- Quick Contact --> */}
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="mailto:info@naphtechcollege.com"
+                  href="mailto:Naphtechcollege@gmail.com"
                   className="group flex flex-col items-center gap-3 p-4 bg-white rounded-xl border-2 border-gray-100 hover:border-[#3B82F6] hover:shadow-xl hover:shadow-[#3B82F6]/10 transition-all duration-300 hover:-translate-y-1 text-center"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-[#3B82F6]/10 to-[#3B82F6]/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -354,14 +296,12 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <div className="text-xs text-[#6B7280]">Email</div>
-                    <div className="text-sm font-medium text-[#1F2937]">
-                      Contact Us
-                    </div>
+                    <div className="text-sm font-medium text-[#1F2937]"></div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+251900000000"
+                  href="tel:+251930210659"
                   className="group flex flex-col items-center gap-3 p-4 bg-white rounded-xl border-2 border-gray-100 hover:border-[#10B981] hover:shadow-xl hover:shadow-[#10B981]/10 transition-all duration-300 hover:-translate-y-1 text-center"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-[#10B981]/10 to-[#10B981]/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -381,9 +321,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <div className="text-xs text-[#6B7280]">Call Now</div>
-                    <div className="text-sm font-medium text-[#1F2937]">
-                      0930210659
-                    </div>
+                    <div className="text-sm font-medium text-[#1F2937]"></div>
                   </div>
                 </a>
               </div>
@@ -396,8 +334,10 @@ export default function ContactUs() {
                 </h4>
                 <div className="flex items-center gap-3">
                   <a
-                    href="#"
-                    className="w-11 h-11 bg-white/10 hover:bg-[#3B82F6] rounded-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    href="https://www.facebook.com/share/g/1RSudDjwLw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-[#3B82F6] rounded-lg flex items-center justify-center transition-all duration-300 hover:-translate-y-1"
                   >
                     <svg
                       className="w-5 h-5 text-white"
@@ -408,48 +348,27 @@ export default function ContactUs() {
                     </svg>
                   </a>
                   <a
-                    href="/https://www.tiktok.com/@naphtechcomputertraining"
-                    className="w-11 h-11 bg-white/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] rounded-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 50"
-                      width={24}
-                      height={24}
-                    >
-                      <path
-                        fill="#010101"
-                        d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
-                      />
-                      <path
-                        fill="#F77737"
-                        d="M37.006 22.323c-0.227 0.021-0.457 0.035-0.69 0.035-2.623 0-4.928-1.349-6.269-3.388 0 5.349 0 11.435 0 11.537 0 4.709-3.818 8.527-8.527 8.527s-8.527-3.818-8.527-8.527 3.818-8.527 8.527-8.527c0.178 0 0.352 0.016 0.527 0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053-2.404 0-4.352 1.948-4.352 4.352s1.948 4.352 4.352 4.352 4.527-1.894 4.527-4.298c0-0.095 0.042-19.594 0.042-19.594h4.016c0.378 3.591 3.277 6.425 6.901 6.685v22.323z"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    className="w-11 h-11 bg-white/10 hover:bg-[#1DA1F2] rounded-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    href="https://www.tiktok.com/@naphtechcomputertraining"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-[#862c05] rounded-lg flex items-center justify-center transition-all duration-300 hover:-translate-y-1"
                   >
                     <svg
                       className="w-5 h-5 text-white"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path>
+                      <path d="M12.75 2h3.25c.2 1.7 1.3 3.3 3 3.9v3.4c-1.2-.1-2.4-.5-3.4-1.2v6.3c0 3.5-2.9 6.3-6.4 6.3-3.5 0-6.4-2.8-6.4-6.3 0-3.5 2.9-6.3 6.4-6.3.3 0 .7 0 1 .1v3.4c-.3-.1-.6-.2-1-.2-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9 2.9-1.3 2.9-2.9V2z" />
                     </svg>
                   </a>
+
                   <a
-                    href="#"
-                    className="w-11 h-11 bg-white/10 hover:bg-[#0A66C2] rounded-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    href="https://t.me/Naphtechcollege"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-[#3B82F6] rounded-lg flex items-center justify-center transition-all duration-300 hover:-translate-y-1"
                   >
-                    <svg
-                      className="w-5 h-5 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                    </svg>
+                    <Send className="w-5 h-5 text-white" />
                   </a>
                 </div>
               </div>
